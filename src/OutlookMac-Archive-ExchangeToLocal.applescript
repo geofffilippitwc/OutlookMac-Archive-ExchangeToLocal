@@ -36,7 +36,7 @@ tell application "Microsoft Outlook"
 	
 	-- Mail Archive parameters
 	set archiveMailItems to true -- no mail archiving will take place if set to false
-	set daysBeforeMailArchive to 80 -- number of days to keep mail in your exchange account before archiving
+	set daysBeforeMailArchive to 30 -- number of days to keep mail in your exchange account before archiving
 	set localMailArchiveRootFolderName to "Archive Mail" -- name of the root archive mail folder to create under 'On My Computer'. If an existing archive mail folder is found it will use it, otherwise it will create the folder for you
 	set excludedMailFoldersList to {"Subscribed Public Folders", "Junk E-mail", "Deleted Items", "Sync Issues", "quarantine", "Conversation History"} -- list of mail folders in your exchange account to exclude (sub-folders will also be excluded).
 	set processSubFoldersofExcludedFolders to false -- By setting to true subfolders will be archived even though the parent folder is excluded for all excluded folders in above list (e.g. excluding your inbox but allowing it's sub-folders to be archived). Note that in this mode, folders with the repeated same name in your folder tree hierarchy will be all excluded if included in the excluded list.
